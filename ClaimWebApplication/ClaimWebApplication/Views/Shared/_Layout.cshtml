@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>@ViewBag.Title - My ASP.NET Application</title>
+	@Styles.Render("~/Content/css")
+
+	<!-- Google Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+</head>
+<body class="hold-transition skin-blue layout-top-nav">
+
+	<div class="wrapper">
+
+		<header class="main-header">
+			<nav class="navbar navbar-static-top" style="height: 10px;"> 
+				<div class="container">
+					<div class="navbar-header">
+						<a href="@Url.Action("Dashboardv2", "Dashboard")" class="navbar-brand"><b>Unknown</b></a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">Link</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+							</div>
+						</form>
+					</div>
+					<!-- /.navbar-collapse -->
+					<!-- Navbar Right Menu -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span> 7 - Items<span class="caret"></span></a>
+									<ul class="dropdown-menu dropdown-cart" role="menu">
+										<li>
+											<span class="item">
+												<span class="item-left">
+													<img src="http://lorempixel.com/50/50/" alt="">
+													<span class="item-info">
+														<span>Item name</span>
+														<span>23$</span>
+													</span>
+												</span>
+												<span class="item-right">
+													<button class="btn btn-xs btn-danger pull-right">x</button>
+												</span>
+											</span>
+										</li>
+										<li>
+											<span class="item">
+												<span class="item-left">
+													<img src="http://lorempixel.com/50/50/" alt="">
+													<span class="item-info">
+														<span>Item name</span>
+														<span>23$</span>
+													</span>
+												</span>
+												<span class="item-right">
+													<button class="btn btn-xs btn-danger pull-right">x</button>
+												</span>
+											</span>
+										</li>
+										<li>
+											<span class="item">
+												<span class="item-left">
+													<img src="http://lorempixel.com/50/50/" alt="">
+													<span class="item-info">
+														<span>Item name</span>
+														<span>23$</span>
+													</span>
+												</span>
+												<span class="item-right">
+													<button class="btn btn-xs btn-danger pull-right">x</button>
+												</span>
+											</span>
+										</li>
+										<li>
+											<span class="item">
+												<span class="item-left">
+													<img src="http://lorempixel.com/50/50/" alt="">
+													<span class="item-info">
+														<span>Item name</span>
+														<span>23$</span>
+													</span>
+												</span>
+												<span class="item-right">
+													<button class="btn btn-xs btn-danger pull-right">x</button>
+												</span>
+											</span>
+										</li>
+										<li class="divider"></li>
+										<li><a class="text-center" href="">View Cart</a></li>
+									</ul>
+								</li>
+							</ul>
+
+							<!-- User Account Menu -->
+							<li class="dropdown user user-menu">
+								<!-- Menu Toggle Button -->
+								<a href="#"	 class="dropdown-toggle" data-toggle="dropdown">
+									<!-- The user image in the navbar-->
+									<img src="~/Content/adminlte/img/user2-160x160.jpg" class="user-image" alt="User Image">
+								</a>
+								<ul class="dropdown-menu">
+									<!-- The user image in the menu -->
+									<li class="user-header">
+										<img src="~/Content/adminlte/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+										<p>
+											Alexander Pierce - Web Developer
+											<small>Member since Nov. 2012</small>
+										</p>
+									</li>
+									<!-- Menu Body -->
+									<li class="user-body">
+										<div class="row">
+											<div class="col-xs-4 text-center">
+												<a href="#">Followers</a>
+											</div>
+											<div class="col-xs-4 text-center">
+												<a href="#">Sales</a>
+											</div>
+											<div class="col-xs-4 text-center">
+												<a href="#">Friends</a>
+											</div>
+										</div>
+										<!-- /.row -->
+									</li>
+									<!-- Menu Footer-->
+									<li class="user-footer">
+										<div class="pull-left">
+											<a href="#" class="btn btn-default btn-flat">Profile</a>
+										</div>
+
+										<div class="pull-right">
+											<a href="#" class="btn btn-default btn-flat">Sign out</a>
+										</div>
+
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-custom-menu -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+
+		@RenderBody()
+
+		@Html.Partial("_Footer")
+	</div>
+	
+	@Scripts.Render("~/bundles/jquery") 
+	@Scripts.Render("~/bundles/lib")
+	@RenderSection("scripts", required: false)
+</body>
+</html>
+
